@@ -1,78 +1,29 @@
-# sarvezh1.github.io — Launch Candidate
+# Sarvesh Galgale, My Academic Website
 
-Personal academic portfolio for Sarvesh Galgale.
+This repository contains the source for my personal academic website, hosted at [https://sarvezh1.github.io](https://sarvezh1.github.io).
 
-## Local preview
+I wanted one place to bring together the research questions I am working on, projects and computational pipelines I have built, publications, and a few things that do not fit neatly into an academic CV.
 
-From the project directory:
+## About the site
 
-```bash
-python -m http.server 8000
-```
+The website is deliberately simple and built with:
 
-Then open:
+- HTML
+- CSS
+- JavaScript
 
-```text
-http://localhost:8000
-```
+There is no framework or build system. I wanted the site to stay lightweight, easy to maintain, and simple enough that I can keep changing it as my work changes.
 
-You can also use the VS Code Live Server extension.
-
-## Structure
-
-```text
-.
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-└── assets/
-    └── images/
-        ├── profile.jpeg
-        ├── clash-barbarian.png
-        ├── favicon.svg
-        └── og-card.png
-```
-
-## Publishing
-
-Create a GitHub repository named exactly:
-
-```text
-sarvezh1.github.io
-```
-
-Push these files to the repository's default branch. GitHub Pages will publish the site at:
-
-```text
-https://sarvezh1.github.io/
-```
-
-## Notes
-
-- Theme preference is remembered in the visitor's browser.
-- The browser theme colour follows light/dark mode.
-- Motion respects `prefers-reduced-motion`.
-- Print styles hide navigation/accessibility UI for cleaner PDF output.
-- Social-sharing and canonical metadata are included for the final GitHub Pages URL.
+Most of the content lives directly in `index.html`, with styling in `css/style.css` and the small interactive parts in `js/main.js`.
 
 ## License
 
-This repository uses a dual-licensing structure to separate the open-source
-website implementation from my personal and academic content.
+This repository uses a dual-licensing structure.
 
-- **Website code:** The original HTML structure, CSS, JavaScript, responsive
-  layout, and interface implementation are released under the MIT License.
-  You are welcome to use and adapt the code for your own website.
+- **Website code:** The original HTML structure, CSS, JavaScript, responsive layout, and interface implementation are released under the MIT License. Feel free to use and adapt the code for your own website.
 
-- **Personal and academic content:** My biography, research descriptions,
-  academic history, publication information, photographs, contact details,
-  personal writing, and other identity-specific content are All Rights
-  Reserved and are not covered by the MIT License.
+- **Personal and academic content:** My biography, research descriptions, academic history, publication information, photographs, contact details, personal writing, and other identity-specific content are All Rights Reserved and are not covered by the MIT License.
 
-- **Third-party material:** Any externally owned artwork, trademarks, logos,
-  publications, or other third-party material remains the property of its
-  respective rights holder.
+- **Third-party material:** Externally owned artwork, trademarks, publications, and other third-party material remain the property of their respective rights holders.
 
-See the [`LICENSE`](LICENSE) file for full details.
+See the [`LICENSE`](LICENSE) file for the full terms.

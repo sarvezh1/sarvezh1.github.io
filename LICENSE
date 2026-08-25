@@ -1,0 +1,83 @@
+Dual License for the Sarvesh Galgale Academic Portfolio
+
+Copyright (c) 2026 Sarvesh Galgale
+
+This repository contains two categories of material:
+
+1. Website code and interface components
+2. Personal, academic, research, and identity-specific content
+
+These categories are licensed separately as described below.
+
+========================================================================
+I. WEBSITE CODE
+
+The original website code, including the HTML structure, CSS styling,
+JavaScript functionality, layout components, responsive behaviour, and
+interface implementation, is released under the MIT License.
+
+MIT License
+
+Copyright (c) 2026 Sarvesh Galgale
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+========================================================================
+II. PERSONAL AND ACADEMIC CONTENT
+
+The MIT License above does not apply to personal, academic, research, or
+identity-specific content contained within this repository.
+
+This includes, but is not limited to:
+
+- personal biographies and profile text
+- photographs of Sarvesh Galgale
+- research and project descriptions
+- academic history
+- publication and manuscript information
+- poster and presentation information
+- contact information
+- personal statements and written narrative
+- identity-specific graphics or media
+- other content specifically relating to Sarvesh Galgale
+
+Such content may appear within HTML files as well as within the assets
+directory.
+
+Unless otherwise stated, this material is:
+
+Copyright (c) 2026 Sarvesh Galgale. All Rights Reserved.
+
+It may not be copied, reproduced, republished, redistributed, or reused in a
+way that represents or imitates the identity, biography, academic work, or
+personal content of Sarvesh Galgale without prior written permission.
+
+========================================================================
+III. THIRD-PARTY MATERIAL
+
+Third-party names, trademarks, logos, character artwork, publications, and
+other externally owned material remain the property of their respective
+copyright and trademark holders.
+
+Such material is not licensed under the MIT License and is not claimed as
+original intellectual property of Sarvesh Galgale.
+
+In particular, any third-party game artwork or character imagery included for
+contextual or personal-reference purposes remains the property of its
+respective rights holder.

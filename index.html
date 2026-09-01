@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sarvesh Galgale — Bioinformatics, computational biology, genomics and machine learning." />
-  <meta name="theme-color" id="theme-color" content="#f4f1e8" />
+  <meta name="theme-color" id="theme-color" content="#f4f0e6" />
   <title>Sarvesh Galgale | Bioinformatics &amp; Computational Biology</title>
   <link rel="canonical" href="https://sarvezh1.github.io/" />
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
@@ -168,7 +168,7 @@
             different kinds of evidence need to be brought together to make biological
             sense of a result.
           </p>
-          <div class="research-tags"><span>AMR</span><span>systems biology</span></div>
+          <div class="research-tags"><span>amr</span><span>systems biology</span></div>
         </article>
       </div>
     </section>
@@ -366,12 +366,42 @@
             </div>
           </div>
         </article>
+
+        <article class="pipeline-card pipeline-card-wide reveal">
+          <div class="pipeline-topline">
+            <span class="card-number">04</span>
+            <div class="wgs-status">
+              <span class="status status-green">Validation completed</span>
+              <span class="version-note">Manuscript in preparation</span>
+            </div>
+          </div>
+          <div class="pipeline-wide-grid">
+            <div>
+              <p class="pipeline-descriptor">Human mitochondrial genome analysis</p>
+              <h3>MitoArc</h3>
+              <p>
+                A reproducible short-read workflow for human mitochondrial genome analysis,
+                incorporating circular-coordinate handling, heteroplasmy calling, NUMT-aware
+                evaluation, haplogroup assignment, contamination assessment, annotation and
+                integrated QC.
+              </p>
+              <div class="tags">
+                <span>Nextflow</span><span>BWA-MEM2</span><span>Mutect2</span>
+                <span>mutserve2</span><span>Haplogroup</span><span>MultiQC</span>
+              </div>
+            </div>
+            <div class="mito-flow" aria-label="MitoArc workflow">
+              <span>FASTQ / BAM</span><i>→</i><span>mtDNA processing</span><i>→</i>
+              <span>standard + shifted chrM</span><i>→</i><span>variant calling</span><i>→</i>
+              <span>NUMT-aware evaluation</span><i>→</i><span>annotation + reporting</span>
+            </div>
+          </div>
+        </article>
       </div>
 
       <div class="development-strip reveal">
         <span class="mini-label">In development</span>
         <div>
-          <span>mtDNA Analysis</span>
           <span>ctDNA Analysis</span>
           <span>Single-nucleus RNA-seq</span>
         </div>
@@ -410,7 +440,11 @@
           </article>
           <article class="output-item">
             <span class="output-marker">M03</span>
-            <h3>WGS pipeline manuscript</h3>
+            <h3>A Reproducible Whole-Genome Sequencing Workflow for Multi-Caller Variant Analysis, Benchmarking, and Reporting</h3>
+          </article>
+          <article class="output-item">
+            <span class="output-marker">M04</span>
+            <h3>MitoArc: A Reproducible Short-Read Workflow for Human Mitochondrial Genome Analysis with Circular-Coordinate and NUMT-Aware Evaluation</h3>
           </article>
         </section>
 
@@ -589,7 +623,7 @@
 
         <footer class="footer">
           <span>Sarvesh Galgale · 2026</span>
-          <span>Last updated · August 2026</span>
+          <span>Last updated · September 2026</span>
           <a href="#top">Back to top ↑</a>
         </footer>
       </div>

@@ -16,7 +16,7 @@
   const applyTheme = (theme) => {
     root.setAttribute("data-theme", theme);
     if (themeColor) {
-      themeColor.setAttribute("content", theme === "dark" ? "#121612" : "#f4f1e8");
+      themeColor.setAttribute("content", theme === "dark" ? "#11191a" : "#f4f0e6");
     }
     themeIcon.textContent = theme === "dark" ? "☀" : "☾";
     themeToggle.setAttribute(

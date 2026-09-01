@@ -2034,6 +2034,172 @@ button:focus-visible {
   }
 }
 
+
+/* =========================================================
+   GLOBAL VISUAL THEME — section rhythm + accent hierarchy
+   This block intentionally overrides colour composition only.
+   Layout, typography, responsive behaviour and content stay intact.
+   ========================================================= */
+
+:root {
+  --theme-research-bg: #e2eaec;
+  --theme-projects-bg: #f7f1e6;
+  --theme-output-bg: #f2e5de;
+  --theme-journey-bg: #e8dfd3;
+  --theme-about-panel: #e4eceb;
+  --theme-project-card: #fcf8ef;
+  --theme-contact-accent: #d28a72;
+}
+
+html[data-theme="dark"] {
+  --theme-research-bg: #152629;
+  --theme-projects-bg: #171f1f;
+  --theme-output-bg: #241c19;
+  --theme-journey-bg: #24211d;
+  --theme-about-panel: #1c2c2e;
+  --theme-project-card: #1b2423;
+  --theme-contact-accent: #d89882;
+}
+
+/* Small editorial markers: oxide, while links/technical details stay petrol. */
+#about .section-index,
+#research .section-index,
+#projects .section-index,
+#output .section-index,
+#other-work .section-index,
+#journey .section-index,
+#beyond .section-index {
+  color: var(--clay);
+}
+
+/* Navigation keeps the petrol identity but gets a warmer active underline. */
+.site-nav > a::after {
+  background: var(--clay);
+}
+
+/* ABOUT — warm paper with a clearly intentional technical sidebar. */
+#about .about-note {
+  border-top-color: var(--accent);
+  background: var(--theme-about-panel);
+}
+
+#about .about-note .mini-label {
+  color: var(--accent-deep);
+}
+
+/* RESEARCH — visibly cool, but still quiet. */
+#research {
+  background: var(--theme-research-bg);
+  box-shadow: 0 0 0 100vmax var(--theme-research-bg);
+  clip-path: inset(0 -100vmax);
+}
+
+#research .research-card {
+  background: transparent;
+}
+
+#research .card-number,
+#research .research-tags span::before {
+  color: var(--accent);
+}
+
+/* PROJECTS — warmer than the base paper, with neutral cards. */
+#projects {
+  background: var(--theme-projects-bg);
+  box-shadow: 0 0 0 100vmax var(--theme-projects-bg);
+  clip-path: inset(0 -100vmax);
+}
+
+#projects .project-featured,
+#projects .project-compact,
+#projects .project-row {
+  background: var(--theme-project-card);
+}
+
+#projects .card-number {
+  color: var(--accent-deep);
+}
+
+/* PIPELINES — keep the dark technical chapter and force action/readout contrast. */
+#pipelines .project-actions .text-link {
+  color: #f4f0e6;
+}
+
+#pipelines .project-actions .text-link::after {
+  background: currentColor;
+}
+
+#pipelines .project-actions .text-link:hover {
+  color: #ffffff;
+}
+
+#pipelines .development-strip .mini-label {
+  color: #ffffff !important;
+}
+
+#pipelines .development-strip div span {
+  color: #f4f0e6 !important;
+}
+
+/* PUBLICATIONS — a warm archival/bibliographic surface. */
+#output {
+  background: var(--theme-output-bg);
+  box-shadow: 0 0 0 100vmax var(--theme-output-bg);
+  clip-path: inset(0 -100vmax);
+}
+
+#output .output-marker,
+#output .output-year {
+  color: var(--clay);
+}
+
+#output .output-block {
+  border-top-color: color-mix(in srgb, var(--clay) 58%, var(--border));
+}
+
+#output .text-link {
+  color: var(--accent-deep);
+}
+
+/* JOURNEY — warmer stone with petrol structure and oxide chronology. */
+#journey {
+  background: var(--theme-journey-bg);
+  box-shadow: 0 0 0 100vmax var(--theme-journey-bg);
+  clip-path: inset(0 -100vmax);
+}
+
+#journey .timeline::before,
+#journey .timeline-dot {
+  background: var(--accent);
+}
+
+#journey .timeline-year {
+  color: var(--clay);
+}
+
+#journey .timeline-dot {
+  box-shadow: 0 0 0 6px var(--theme-journey-bg);
+}
+
+/* CONTACT — same ink family as Pipelines, but darker and simpler. */
+#contact .section-index {
+  color: var(--theme-contact-accent);
+}
+
+#contact .contact-links a {
+  border-color: color-mix(in srgb, var(--accent) 52%, transparent);
+}
+
+#contact .contact-links a:hover {
+  border-color: var(--contact-text);
+}
+
+/* Dark-mode motif centres should belong to the section surface, not the page base. */
+html[data-theme="dark"] #research .motif-network i {
+  background: var(--theme-research-bg);
+}
+
+
 /* PRINT CLEANUP */
 
 @media print {
@@ -2145,12 +2311,9 @@ button:focus-visible {
     border-color: #bbb;
   }
 
-  #pipelines .development-strip .mini-label {
-  color: #ffffff;
-  }
-
+  #pipelines .development-strip .mini-label,
   #pipelines .development-strip div span {
-    color: #f4f0e6;
+    color: #111 !important;
   }
 
   .contact-inner h2,

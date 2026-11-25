@@ -1,29 +1,22 @@
-# Sarvesh Galgale, My Academic Website
+# Sarvesh Galgale - Academic Research Portfolio
 
-This repository contains the source for my personal academic website, hosted at [https://sarvezh1.github.io](https://sarvezh1.github.io).
+Source for [sarvezh1.github.io](https://sarvezh1.github.io/), a static academic portfolio with five sections: About Me, Ongoing Projects, Completed Projects, Workflows & Pipelines, and Publications & Preprints.
 
-I wanted one place to bring together the research questions I am working on, projects and computational pipelines I have built, publications, and a few things that do not fit neatly into an academic CV.
+## Structure
 
-## About the site
+- `index.html` contains the page and approved portfolio content.
+- `styles.css` contains custom visual and interaction styles. The page also loads the browser Tailwind runtime and Google Fonts.
+- `script.js` handles tab selection, number keys 1-5, portrait sizing, and abstract dismissal. Native HTML `details` elements provide abstract expansion.
+- `assets/images/` contains the profile portrait, Barbarian image, and the two workflow screenshots.
 
-The website is deliberately simple and built with:
+## Local preview
 
-- HTML
-- CSS
-- JavaScript
+From the repository root, run `python -m http.server 8765 --bind 127.0.0.1` and open `http://127.0.0.1:8765/`.
 
-There is no framework or build system. I wanted the site to stay lightweight, easy to maintain, and simple enough that I can keep changing it as my work changes.
+## Updating content
 
-Most of the content lives directly in `index.html`, with styling in `css/style.css` and the small interactive parts in `js/main.js`.
+Edit the appropriate section in `index.html` to update projects, workflows, publications, links, and text. Keep local image paths relative to the repository root. Use `styles.css` for targeted styling changes and `script.js` for navigation or abstract interaction changes. The site has no build step.
 
 ## License
 
-This repository uses a dual-licensing structure.
-
-- **Website code:** The original HTML structure, CSS, JavaScript, responsive layout, and interface implementation are released under the MIT License. Feel free to use and adapt the code for your own website.
-
-- **Personal and academic content:** My biography, research descriptions, academic history, publication information, photographs, contact details, personal writing, and other identity-specific content are All Rights Reserved and are not covered by the MIT License.
-
-- **Third-party material:** Externally owned artwork, trademarks, publications, and other third-party material remain the property of their respective rights holders.
-
-See the [`LICENSE`](LICENSE) file for the full terms.
+The [`LICENSE`](LICENSE) file distinguishes MIT-licensed website code from Sarvesh Galgale's reserved personal and academic content. Third-party artwork, names, and trademarks remain with their respective owners and are not included in the MIT grant.
